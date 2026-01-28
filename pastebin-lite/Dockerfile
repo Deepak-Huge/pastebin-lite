@@ -5,7 +5,7 @@ WORKDIR /app
 COPY pom.xml .
 COPY mvnw .
 COPY .mvn .mvn
-
+RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
 COPY target/*.jar app.jar
