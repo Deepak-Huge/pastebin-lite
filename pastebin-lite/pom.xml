@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.aganitha</groupId>
 	<artifactId>pastebin-lite</artifactId>
-	<version>1.0</version>
+	<version>1.0</version> 
 	<name>pastebin-lite</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
