@@ -2,20 +2,15 @@ FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
-COPY pom.xml .
-COPY mvnw .
+COPY pom.xml ./
+COPY mvnw ./
 COPY .mvn .mvn
-
-RUN chmod +x mvnw
-
-# Download dependencies only (build won't fail if no source yet)
-RUN ./mvnw dependency:go-offline -B
-
 COPY src ./src
 
+RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
-RUN ls -l target
+RUN ls -l target/
 
 COPY target/*.jar app.jar
 
