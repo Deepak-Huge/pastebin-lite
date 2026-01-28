@@ -74,16 +74,17 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				      <configuration>
-        <mainClass>com.aganitha.YourMainClassName</mainClass>
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+      <configuration>
+        <mainClass>com.example.aganitha.PastebinLiteApplication</mainClass>
       </configuration>
-			</plugin>
-		</plugins>
-	</build>
+    </plugin>
+  </plugins>
+</build>
+
 
 </project>
