@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-const API_BASE = "http://localhost:8080";
+const API_BASE = "https://pastebin-lite-3-lr8g.onrender.com";
+
 
 function CreatePaste() {
   const [content, setContent] = useState("");
