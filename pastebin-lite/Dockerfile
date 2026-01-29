@@ -2,10 +2,10 @@ FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
-COPY pastebin-lite/pom.xml .
-COPY pastebin-lite/mvnw .
-COPY pastebin-lite/.mvn .mvn
-COPY pastebin-lite/src ./src
+COPY pom.xml .
+COPY mvnw .
+COPY .mvn .mvn
+COPY src src
 
 RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
