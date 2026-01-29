@@ -16,4 +16,4 @@ COPY target/*.jar app.jar
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "target/pastebin-lite-1.0.jar"]
